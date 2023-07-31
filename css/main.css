@@ -1,0 +1,14 @@
+/*Anasayfa*/
+.anasayfa-hakkimda {
+  background-color: #3C486B;
+  color: white;
+  border-radius: 1rem;
+}
+
+p {
+  text-indent: 2rem;
+  font-size: 1.1rem;
+}
+footer a:hover{
+background-color: #F0DE36;
+}
