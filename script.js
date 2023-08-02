@@ -12,23 +12,4 @@ function loginkontrol() {
         alert("Geçersiz Mail Adresi!!!");
         return false;
     }
-    
-    if ( email == "b211210079@sakarya.edu.tr" && pass == "b211210079"){
-        
-        alert (mesajsc);
-        window.location = "index.html"; // index.html yonlendir
-        return false;
-    }
-    else{
-        attempt--;// deneme hakkını bir adet indir
-        alert("Şifre veya Mail Yanlış ! Deneme Hakkınız "+attempt+" Adet Kaldı!!");
-        // 3 deneme hakkı bitince
-        if( attempt == 0){
-        document.getElementById("mail").disabled = true;
-        document.getElementById("sifre").disabled = true;
-        document.getElementById("gonder").disabled = true;
-        return false;
-        }
-    }
-    
 }
