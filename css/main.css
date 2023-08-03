@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 /*Anasayfa*/
 .anasayfa-hakkimda {
   background-color: #3C486B;
@@ -110,3 +114,65 @@ hr.hretiketim {
     height: auto;
     border-radius: 1rem;
 }
+
+#samsunsporhak:hover{
+    background-color: black;
+    color: red;
+}
+#yukariBtn {
+    /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    font-weight: bold;
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #yukariBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+    color:red;
+    font-weight: bold;
+    transition-duration: 0.2s;
+  }
+
+  .ilgialanimbutton{
+    background-color: #dc3545;
+    color:white;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-left: 15px;
+    transition-duration: 0.4s;
+    padding: 5px 12px;
+  }
+  .ilgialanimbutton:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: white;
+    color: #dc3545;
+  }
+
+  .ilgialanimtext {
+    padding: 5px 12px;
+    color:#dc3545;
+    font-weight: bold;
+    border-radius: 5px;
+    border : 2px solid #dc3545;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*  YAZILAMADI
+    background-image: url('img/araicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    */
+  }
+
+  .ilgialanimtext:focus{
+    background-color: lightblue;
+  }
