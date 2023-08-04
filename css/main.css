@@ -137,7 +137,7 @@ hr.hretiketim {
   }
   
   #yukariBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
+    background-color: white; /* Add a dark-grey background on hover */
     color:red;
     font-weight: bold;
     transition-duration: 0.2s;
@@ -176,3 +176,4 @@ hr.hretiketim {
   .ilgialanimtext:focus{
     background-color: lightblue;
   }
+  
