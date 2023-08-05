@@ -21,7 +21,7 @@ hr.hretiketim {
 }
 .egitimbilgileri-baslik{
   background-color: #3C486B;
-  flex: 0 0 100%; /* Let it fill the entire space horizontally */
+  flex: 0 0 100%; /* boşluğu yatay bir şekilde tamamen doldur. */
   border-radius: 10px;
 }
 
@@ -102,7 +102,7 @@ hr.hretiketim {
    }
    .sehrim-arkaplan{
     background-color: #3C486B;
-    flex: 0 0 100%; /* Let it fill the entire space horizontally */
+    flex: 0 0 100%; /* yatay şekilde full doldur */
     border-radius: 10px;
   }
   .samsunspor-link {
@@ -116,11 +116,12 @@ hr.hretiketim {
 }
 
 #samsunsporhak:hover{
-    background-color: black;
+    background-color: white;
     color: red;
+    font-weight: bold;
 }
 #yukariBtn {
-    /* Hidden by default */
+    /* default olarak hidden verilmiş bir kod ama açtım. */
     position: fixed; /* Fixed/sticky position */
     bottom: 20px; /* Place the button at the bottom of the page */
     right: 30px; /* Place the button 30px from the right */
@@ -176,4 +177,49 @@ hr.hretiketim {
   .ilgialanimtext:focus{
     background-color: lightblue;
   }
-  
+/*İletişim sayfası css kodları*/
+  .iletisimbody{
+    background-color: #F0DE36; ;
+  }
+  .contact{
+		padding: 4%;
+		height: 400px;
+	}
+
+  .colon1{
+    background: #25274d;
+		padding: 4%;
+		border-top-left-radius: 0.5rem;
+		border-bottom-left-radius: 0.5rem;
+  }
+
+  .contact-info{
+		margin-top:10%;
+    color:white
+	}
+	.contact-info img{
+		margin-bottom: 15%;
+	}
+	.contact-info h2{
+		margin-bottom: 10%;
+	}
+
+  .colon2{
+    background: #fff;
+		padding: 3%;
+		border-top-right-radius: 0.5rem;
+		border-bottom-right-radius: 0.5rem;
+  }
+
+  .contact-form label{
+		font-weight:600;
+	}
+	.contact-form button{
+		background: #25274d;
+		color: #fff;
+		font-weight: 600;
+		width: 25%;
+	}
+	.contact-form button:focus{
+		box-shadow:none;
+	}
