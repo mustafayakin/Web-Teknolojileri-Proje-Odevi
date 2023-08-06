@@ -6,7 +6,7 @@ function loginkontrol() {
         return false;
     }
     var email = document.forms["girisYap_form"]["mail"].value;
-    var forMail = /^[a-zA-Z0-9._-]+@([a-zA-Z0-9.-]+.)+([.])+[a-zA-Z0-9.-]{2,4}$/; // how to do an email validation in javascript ??
+    var forMail = /^[a-zA-Z0-9._-]+@([a-zA-Z0-9.-]+.)+([.])+[a-zA-Z0-9.-]{2,4}$/; // how to do an email validation in javascript ?? from stacoverflow alındı
     if (forMail.test(email) == false) {
         alert("Geçersiz Mail Adresi!!!");
         return false;
@@ -32,7 +32,7 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
-
+/* Burası Kaldırıldı... */
 function ilgialanimsub(){
   alert("Gonderdiniz!");
   var yazan;
@@ -50,7 +50,7 @@ function fun(){
 
 
 function iletisimcontrol() {
-  isim1="ahmet";
+  isim1="deneme123"; // Kod deneme yapıldı...
   var name = document.forms["iletisimform"]["fname"].value;
   if (name == "") {
       alert("İsim boş bırakılamaz");
@@ -147,8 +147,4 @@ try {
 } catch (error) {
 	console.error(error);
 }
-}
-
-function getir(d){
-  
 }
