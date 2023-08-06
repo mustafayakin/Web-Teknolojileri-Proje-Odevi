@@ -62,33 +62,18 @@
                         <div class="card-body">
                             <div class="d-flex justify-content-start">
                                 <div class="mx-auto">
-                                    <h4 class="font-weight-bold text-danger text-center">Api Kontrol</h4> <hr class="hretiketim">
-                                    <h5 class="card-title" id="ilgi1"><input type="text" class="ilgialanimtext" id="ilgialanimtextid"><button type="submit" class="ilgialanimbutton" onclick="ilgialanimsub()">Gönder</button></h5>
+                                    <h4 class="font-weight-bold text-danger text-center" id="apibaslik">Rastgele TOP:250</h4> <hr class="hretiketim">
+                                    <h5 class="card-title" id="ilgi1"><input type="text" id="movietext" class="ilgialanimtext text-center" id="ilgialanimtextid" disabled><button type="submit" class="ilgialanimbutton" onclick="apim()">Getir!</button></h5>
                                 </div>
                             </div>
                             <p class="card-text mt-2 h4 text-center" id="yazilan">Lorem ipsum dolor </p>
-                            <p class="card-text mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vero hic aliquam, reprehenderit eius praesentium, harum architecto assumenda, quis impedit maxime doloremque aspernatur tempora tenetur dignissimos omnis unde dolores ad.</p>
+                            <p class="card-text mt-3" id="apitext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vero hic aliquam, reprehenderit eius praesentium, harum architecto assumenda, quis impedit maxime doloremque aspernatur tempora tenetur dignissimos omnis unde dolores ad.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="card mb-3">
-                        <img src="img/resim1.jpg" class="card-img-top" alt="">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-start">
-                                <div class="mr-2 date">
-                                    <ul class="list-unstyled bg-dark font-italic text-white">
-                                        <li>22</li>
-                                        <li>Tem</li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h5 class="card-title" id="ilgi1">İlgi Alanım 1</h5>
-                                </div>
-                            </div>
-                           
-                            <p class="card-text mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vero hic aliquam, reprehenderit eius praesentium, harum architecto assumenda, quis impedit maxime doloremque aspernatur tempora tenetur dignissimos omnis unde dolores ad.</p>
-                        </div>
+                        <img src="img/api.jpg" id="apiresim" class="card-img-top" alt="">
                     </div>
                 </div>
             </div>
@@ -96,75 +81,85 @@
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <div class="card mb-3">
-                        <img src="img/resim1.jpg" class="card-img-top" alt="">
-                        <div class="card-body">
+                        <img src="img/terminator1.jpg" class="card-img-top" alt="">
+                        <div class="card-body ilgicard">
                             <div class="d-flex justify-content-start">
-                                <div class="mr-2 date">
-                                    <ul class="list-unstyled bg-dark font-italic text-white">
-                                        <li>22</li>
-                                        <li>Tem</li>
+                                <div class="mr-2 date datecss">
+                                    <ul class="list-unstyled font-italic">
+                                        <li>1</li>
+                                        <li>Ocak</li>
                                     </ul>
                                 </div>
                                 <div>
-                                    <h5 class="card-title" id="ilgi1">İlgi Alanım 1</h5>
+                                    <h5 class="card-title text-danger font-weight-bold mt-3 mx-auto" id="ilgi1">Terminator I</h5>
                                 </div>
                             </div>
                            
-                            <p class="card-text mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vero hic aliquam, reprehenderit eius praesentium, harum architecto assumenda, quis impedit maxime doloremque aspernatur tempora tenetur dignissimos omnis unde dolores ad.</p>
+                            <p class="card-text mt-3">
+                                Terminatör, çekildiği dönemden çok uzak bir gelecekte, 2029 yılında geçmektedir. Fütüristik filmde yeryüzü artık robotlar tarafından kontrol edilen ve bu robotlara karşı savaş veren bir grup insanlık direnişçisinin yaşadığı bir gezegendir. Makineler sahip oldukları sınırsız gücü istedikleri gibi kullanmakta, sadece daha fazla güçlü olmanın peşindedirler. Bu nedenle akıllıca bir plan yapan makineler, geçmişi değiştirmeye karar verirler; böylece kendi istedikleri türde bir geleceğe sahip olabileceklerdir. İnsanlık direnişinin eski önderlerinden Sarah Connor’ı öldürmesi için tasarlanan Terminatör isimli android, kadını öldürerek, gelecekte insanlığın direniş önderi olacak oğlu John Connor’ın doğmasını da engellemek için geçmişe gönderilir.
+Bilimkurgu türünün en ses getiren yapımlarından biri olan Terminatör serisinin bu ilk filmi serinin ve türünün en kusursuz filmi olma özelliğinde. James Cameron’ın çizdiği bu kusursuz kıyamet sonrası dünya senaryosu, başarısının önemli bir payını seriyle kültleşen Arnol Schwarzenegger’e borçlu.
+                            </p>
                         </div>
                     </div>
                     <div class="card mb-3">
-                        <img src="img/resim2.jpg" class="card-img-top" alt="">
-                        <div class="card-body">
+                        <img src="img/terminator2.jpg" class="card-img-top" alt="">
+                        <div class="card-body ilgicard">
                             <div class="d-flex justify-content-start">
-                                <div class="mr-2 date">
-                                    <ul class="list-unstyled bg-dark font-italic text-white">
-                                        <li>22</li>
-                                        <li>Tem</li>
+                                <div class="mr-2 date datecss">
+                                    <ul class="list-unstyled font-italic">
+                                        <li>25</li>
+                                        <li>Ekim</li>
                                     </ul>
                                 </div>
                                 <div>
-                                    <h5 class="card-title" id="ilgi2">İlgi Alanım 2</h5>
+                                    <h5 class="card-title text-danger font-weight-bold mt-3" id="ilgi2">Terminator II</h5>
                                 </div>
                             </div>
                            
-                            <p class="card-text mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vero hic aliquam, reprehenderit eius praesentium, harum architecto assumenda, quis impedit maxime doloremque aspernatur tempora tenetur dignissimos omnis unde dolores ad.</p>
+                            <p class="card-text mt-3">
+                                Terminatör 2: Mahşer Günü, 2009 yılında geçmektedir. Sarah Connor’ı öldürme görevinde başarısızlığa uğrayan Synet robotları, T-1000 adında yeni bir robot üretirler. Bu yeni “Terminatör” geçmişe dönerek insan direnişinin gelecekteki lideri olacak Sarah’ın oğlu John Connar’ı öldürmeye programlanır. Fakat bir diğer robot T-800 de John’u korumaya programlanarak geçmişe gönderilmiştir. İnsanoğlunun kaderini belirleyen tek bir soru vardır: İki robottan hangisi John’u daha önce bulacaktır?  
+Yönetmen koltuğunda ‘Alien’, ‘Titanic’ ve ‘Avatar’ gibi kült filmlerin usta yönetmeni James Cameron; başrollerinde ise ilk filmdeki gibi Arnold Schwarzenegger ve Linda Hamilton var.
+                            </p>
                         </div>
                     </div>
                     <div class="card mb-3">
-                        <img src="img/resim3.jpg" class="card-img-top" alt="">
-                        <div class="card-body">
+                        <img src="img/terminator3.jpg" class="card-img-top" alt="">
+                        <div class="card-body ilgicard">
                             <div class="d-flex justify-content-start">
-                                <div class="mr-2 date">
-                                    <ul class="list-unstyled bg-dark font-italic text-white">
-                                        <li>22</li>
-                                        <li>Tem</li>
+                                <div class="mr-2 date datecss">
+                                    <ul class="list-unstyled font-italic">
+                                        <li>25</li>
+                                        <li>Temz</li>
                                     </ul>
                                 </div>
                                 <div>
-                                    <h5 class="card-title" id="ilgi3">İlgi Alanım 3</h5>
+                                    <h5 class="card-title text-danger font-weight-bold mt-3" id="ilgi3">Terminator III</h5>
                                 </div>
                             </div>
                            
-                            <p class="card-text mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vero hic aliquam, reprehenderit eius praesentium, harum architecto assumenda, quis impedit maxime doloremque aspernatur tempora tenetur dignissimos omnis unde dolores ad.</p>
+                            <p class="card-text mt-3">
+                                John Connor, son derece sıradan hayatına bir işçi olarak devam etmektedir. Annesi olan Sarah Connnor ise hayatını kaybetmiştir. Sarah ölmüştür ancak gelecekteki makineler bilmektedirler ki John, gelecekteki direnişin lideri olacaktır. Bu nedenle Skynet, onu ortadan kaldırmak üzere üretilmiş en güçlü Terminatör olan dişi T-X'i günümüze gönderir. T-X ve John Connor artık amansız bir kedi fare oyununun içerisindedirler.
+                            </p>
                         </div>
                     </div>
                     <div class="card mb-3">
-                        <img src="img/resim3.jpg" class="card-img-top" alt="">
-                        <div class="card-body">
+                        <img src="img/dark.jpg" class="card-img-top" alt="">
+                        <div class="card-body ilgicard">
                             <div class="d-flex justify-content-start">
-                                <div class="mr-2 date">
-                                    <ul class="list-unstyled bg-dark font-italic text-white">
+                                <div class="mr-2 date datecss">
+                                    <ul class="list-unstyled font-italic">
                                         <li>22</li>
                                         <li>Tem</li>
                                     </ul>
                                 </div>
                                 <div>
-                                    <h5 class="card-title" id="ilgi4">İlgi Alanım 4</h5>
+                                    <h5 class="card-title text-danger font-weight-bold mt-3" id="ilgi4">Dark</h5>
                                 </div>
                             </div>
                            
-                            <p class="card-text mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vero hic aliquam, reprehenderit eius praesentium, harum architecto assumenda, quis impedit maxime doloremque aspernatur tempora tenetur dignissimos omnis unde dolores ad.</p>
+                            <p class="card-text mt-2">
+                            Almanya'nın Winden kasabası ve çevresinde çocukların teker teker ortadan kaybolması sonucunda kaçırılma gibi gözüken bu olaylar hakkında polisin soruşturması devam eder. Bu sırada babasının ani intiharına bir türlü anlam veremediği için toparlanamayan ve bir süreliğine kasabadan ayrılan Jonas, tekrar kasabaya dönüş yaparak annesi ve arkadaşlarıyla hayatına kaldığı yerden devam etmeye çalışır. Bir gece arkadaşlarıyla birlikte ormandayken bir mağaranın yakınlarında, grupta bulunan ve kasabadaki polis memurlarından birinin oğlu olan Mikkel'in de kaybolmasıyla birlikte Jonas'ın bütün hayatı değişir. Bu olay, akıl almaz olayların ve mağara yakınlarında bulunan nükleer santralin de karanlık sırlarının ortaya çıkmasının başlangıcı olur. Kasaba sakinleri, kendilerini bir anda kimsenin anlam veremediği fakat 33 yıl önce yaşanan olayların tekrarı içerisinde bulur. Winden kasabasında yaşayan dört ailenin 33 yılda bir tekrarlanan döngü içerisindeki rolleri ve birbiriyle olan ilişkileri, geçmişi ve geleceği nasıl etkileyecektir? Dark, zaman döngüsü içerisinde aynı karakterlerin farklı zamanlarda farklı şekillerde ortaya çıkabildiği bir dizi fakat biz size karakterleri tanıtırken dizinin ilerleyen bölümleri hakkında spoiler vermemek adına; sadece ilk sezonda ön planda olan karakterleri tanıtacağız. Fakat kafanızın karışmaması için Winden kasabasındaki dört ailenin başlıca çizilmiş bir Dark karakterler soyağacını da aşağıya bırakıyoruz.
+                            </p>
                         </div>
                     </div>
                 </div>

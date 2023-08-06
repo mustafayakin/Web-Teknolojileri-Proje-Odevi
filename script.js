@@ -119,5 +119,36 @@ var language311 = getParameterByName('language2');
 document.getElementById('language3').innerHTML = language311;
 }
 
+async function apim(){
+const url = 'https://moviesdatabase.p.rapidapi.com/titles/random?limit=1&list=most_pop_movies';
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '98c685053fmsh2b530d50ee27132p1f1e45jsnc0d85ff7fada',
+		'X-RapidAPI-Host': 'moviesdatabase.p.rapidapi.com'
+	}
+};
 
+try {
+	const response = await fetch(url, options).then(result =>{
+    return result.json();
+  })
+  .then(data=>{
+    console.log(data.results[0]);
+    document.getElementById('yazilan').innerHTML = data.results[0].titleText.text;
+    document.getElementById('movietext').value = data.results[0].titleType.text;
+    document.getElementById('apitext').innerHTML = data.results[0].primaryImage.caption.plainText;
+    var apikontrolyazisi;
+    apikontrolyazisi = "Release Date: " + data.results[0].releaseDate.day + "." + data.results[0].releaseDate.month + "." + data.results[0].releaseDate.year;
+    document.getElementById('apibaslik').innerHTML = apikontrolyazisi;
+    document.getElementById('apiresim').src = data.results[0].primaryImage.url;
+  });
 
+} catch (error) {
+	console.error(error);
+}
+}
+
+function getir(d){
+  
+}

@@ -223,3 +223,20 @@ hr.hretiketim {
 	.contact-form button:focus{
 		box-shadow:none;
 	}
+  
+  #apiresim{
+    max-height: 750px;
+  }
+
+  .ilgicard{
+    background: #25274d;
+    color:white;
+    border-radius: 5px;
+  }
+
+  .datecss{
+    color: white;
+    background-color: red;
+    font-weight: bold;
+    border-radius: 5px;
+  }
